@@ -1,0 +1,24 @@
+body {
+    background: $primary-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    letter-spacing: 0.1em;
+}
+
+.noto-sans-tc {
+    font-family: "Noto Sans TC", sans-serif;
+
+}
+
+p {
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
