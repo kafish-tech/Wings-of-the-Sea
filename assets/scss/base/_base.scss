@@ -1,13 +1,17 @@
 body {
-    background-color: $primary-500;
+    e <<<<<<< HEAD background-color: $primary-500;
+    =======background: $primary-100;
+    >>>>>>>c7455e15ee77a05dc20f520ddbc83fbaa989f08c
 }
+
+;
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-    margin-bottom: 0;
+<<<<<<< HEAD h5 {
+    marin-bottom: 0;
     letter-spacing: 0.05em;
     color: white;
 }
@@ -20,10 +24,24 @@ h6 {
 img {
     max-width: 100%;
     height: auto;
-}
 
-p {
-    margin-bottom: 0;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-}
+    =======h5,
+    h6 {
+        margin-bottom: 0;
+        letter-spacing: 0.1em;
+    }
+
+    .noto-sans-tc {
+        font-family: "Noto Sans TC", sans-serif;
+
+        >>>>>>>c7455e15ee77a05dc20f520ddbc83fbaa989f08c
+    }
+
+    p {
+        margin-bottom: 0;
+        <<<<<<< HEAD letter-spacing: 0.02em;
+        font-weight: 400;
+        =======letter-spacing: 0.05em;
+        font-weight: 600;
+        >>>>>>>c7455e15ee77a05dc20f520ddbc83fbaa989f08c
+    }
