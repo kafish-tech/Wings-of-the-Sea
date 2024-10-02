@@ -1,24 +1,29 @@
 body {
-    background: $primary-100;
+    background-color: $primary-500;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     margin-bottom: 0;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    color: white;
 }
 
-.noto-sans-tc {
-    font-family: "Noto Sans TC", sans-serif;
+h6 {
+    margin-bottom: 0;
+    letter-spacing: 0.02em
+}
 
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 p {
     margin-bottom: 0;
-    letter-spacing: 0.05em;
-    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-weight: 400;
 }
