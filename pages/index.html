@@ -11,17 +11,43 @@
 
 <body>
   <%- include('./layout/header');-%>
-    <h1>哈哈哈</h1>
-    <button type="button" class="btn btn-primary-300 me-18">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-sm btn-info">Info</button>
-    <button type="button" class="btn btn-lg btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <section class="shopping-entrance">
+      <div class=" beginner-entrance pt-14 pt-md-16">
+        <div class="container-xxl d-lg-flex align-items-center justify-content-center px-md-11 px-lg-14">
+          <h6 class="fs-lg-1 text-white">你還無法起乘嗎？ </h6>
+          <div class="d-flex align-items-center">
+            <h6 class="fs-lg-1s text-white">要不要來一張</h6>
+            <a href="#" class="btn  text-primary-200 rounded-0 fs-lg-1">快樂板<span
+                class="fs-3 material-symbols-outlined fs-5 align-text-bottom">
+                arrow_right
+              </span></a>
+          </div>
+        </div>
+      </div>
 
-    <button type="button" class="btn btn-link">Link</button>
+      <div class=" d-lg-flex">
+
+        <div class="intermediate-entrance position-relative">
+          <div class="container-fluid intermediate-title d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">中階版</a>
+              <a class="p-0 btn  btn-lg d-none d-lg-block" href="#">中階版</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="height-end-entrance position-relative">
+          <div class="container-fluid height-end-title d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4 ">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">高階版</a>
+              <a class="p-0 btn btn-lg d-none d-lg-block" href="#">高階版</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <%- include('./layout/footer');-%>
       <script type="module" src="../main.js"></script>
 </body>

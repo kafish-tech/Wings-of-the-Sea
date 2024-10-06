@@ -1,0 +1,52 @@
+.beginner-entrance {
+    height: 802px;
+    width: 100%;
+    background-image: url("/assets/images/shopping-Entrance-01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include mobile {
+        height: 400px;
+    }
+}
+
+.intermediate-entrance {
+    height: 600px;
+    width: 100%;
+    background-image: url("/assets/images/shopping-Entrance-02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .intermediate-title {
+        background: linear-gradient(to top, rgba(29, 34, 44, 0.85), rgba(29, 34, 44, 0.75), rgba(29, 34, 44, 0.5), rgba(29, 34, 44, 0.3), rgba(29, 34, 44, 0));
+    }
+
+    @include mobile {
+        height: 400px;
+    }
+}
+
+.height-end-entrance {
+    height: 600px;
+    width: 100%;
+    background-image: url("/assets/images/shopping-Entrance-03.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .height-end-title {
+        background: linear-gradient(to top, rgba(29, 34, 44, 0.85), rgba(29, 34, 44, 0.75), rgba(29, 34, 44, 0.5), rgba(29, 34, 44, 0.3), rgba(29, 34, 44, 0));
+    }
+
+    @include mobile {
+        height: 400px;
+    }
+}
