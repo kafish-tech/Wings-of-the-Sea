@@ -30,6 +30,10 @@ li {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: $primary-400;
+    }
 }
 
 p {
