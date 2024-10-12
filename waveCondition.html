@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/web-layout-training-vite/assets/oceanWingsIcon-29b1deeb.png" />
+    <title>Wave Condition - Ocean Wings</title>
+  <script type="module" crossorigin src="/web-layout-training-vite/assets/main-b726db7c.js"></script>
+  <link rel="stylesheet" href="/web-layout-training-vite/assets/main-0815549d.css">
+</head>
+<body>
+    <!-- <h1 class="footer">我是 header</h1>
+<h2 class="hello">我是h2</h2>
+<a href="index.html">index</a>
+<a href="about.html">about</a>
+<a href="contact.html">contact</a>
+<a href="waveCondition.html">waveCondition</a> -->
+    <section class="waveCondition container d-flex flex-column">
+
+        <!-- 頁面選單 -->
+        <nav class="mb-sm-15 mb-5 py-sm-2 py-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">浪況分析</li>
+            </ol>
+        </nav>
+
+        <!-- 搜尋框 -->
+        <div class="searchPlace input-group mb-13 mb-sm-16 d-flex mx-auto g-3">
+            <!-- 搜尋 ICON -->
+            <span class="input-group-text text-white iconPlace56 bg-primary-500 border-0"><i class="bi bi-search icon32"></i></span>
+            <!-- 搜尋輸入框 -->
+            <input id="searchInput" class="form-control outline-none" type="search" placeholder="輸入浪點" aria-label="search" aria-describedby="#searchAdd">
+            <!-- 清除 ICON -->
+            <span class="input-group-text text-white iconPlace40 bg-primary-500 border-0"><i class="bi bi-x-circle-fill icon20"></i></span>
+            <!-- 地點清單 -->
+            <button class="btn btn-primary text-white iconPlace56 border-0" type="button" id="searchAdd"><i class="bi bi-chevron-down icon32"></i></button>
+        </div>
+
+        <!-- 地點標題 -->
+        <h1 class="location">
+            <span class="locationBg">松柏港</span>
+        </h1>
+
+        <!--  日期選單  -->
+        <div class="dateArea">
+            <div class="previousBtn d-none d-sm-block mr-11">
+                <a class="page-link p-4" href="#" aria-label="Previous"><i class="bi bi-chevron-left "></i></a>
+            </div>
+            <nav class="dateBtn" aria-label="Page navigation">
+                <ul class="pagination justify-content-between align-items-center">
+                    <li class="page-item"><a class="page-link active py-2 px-5 text-center" href="#" role="button">08/26<br>(一)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/27<br>(二)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/28<br>(三)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/29<br>(四)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/30<br>(五)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/31<br>(六)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">09/01<br>(日)</a></li>
+                </ul>
+            </nav>
+            <div class="nextBtn d-none d-sm-block ml-11">
+                <a class="page-link p-4" href="#" aria-label="Next">
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <!--  浪況資訊  -->
+        <div class="information d-flex flex-column flex-md-row-reverse">
+            <div class="comment align-self-sm-stretch position-relative py-4 px-5 d-flex flex-column justify-content-between">
+                <p class="fw-bold">今日評語</p>
+                <div class="align-self-end">
+                    <p class="fw-bold text-end">大浪怒濤</p>
+                    <p>浪高與高手雲集，新手不宜</p>
+                </div>
+                <img class="position-absolute " src="data:image/png;base64,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" alt="大浪怒濤">
+            </div>
+            <div class="coefficient d-flex flex-column">
+                <div class="borderTop d-flex align-items-center justify-content-between">
+                    <p>下浪時間</p>
+                    <p class="fw-bold">13:00-15:00</p>
+                </div>
+                <div class="row g-0">
+                    <div class="borderLeft col-12 col-md-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>浪高(米)</p>
+                            <p class="fw-bold">0.8</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>風向</p>
+                            <i class="bi bi-cursor-fill" style="transform: rotate(45deg);"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>風速(節)</p>
+                            <p  class="fw-bold">13</p>
+                        </div>
+                    </div>
+                    <div class="borderRight col-12 col-md-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>週期</p>
+                            <p  class="fw-bold">7.2</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>海浪方向</p>
+                            <i class="bi bi-cursor-fill"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>氣溫(°C)</p>
+                            <p  class="fw-bold">27</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footerBg">
+    <div class="container d-flex flex-column">
+        
+        <div class="footerHeader">
+            <h2 class="fw-bold">海上之翼 Wings of the Sea</h2>
+        </div>
+        
+        <div class="footerContent row flex-sm-row-reverse flex-column">
+        
+            <div class="community col-sm-4 col-12 d-flex flex-column g-5">
+                <div class="d-sm-block d-none align-self-end"><p>追蹤我們</p></div>
+                <div class="d-flex gx-sm-7 gx-4 align-self-sm-end align-self-start">
+                    <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter-x"></i><i class="bi bi-youtube"></i>
+                </div>
+            </div>
+        
+            <div class="webMap col-sm-8 col-12 d-flex justify-content-sm-between flex-column flex-sm-row">
+                <div>
+                    <p class="fw-bold mb-sm-5 mb-3">關於我們</p>
+                    <div class="d-flex flex-column gy-2">
+                        <p class="py-1 py-sm-2"><a href="#">關於我們</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">海上之翼製作組</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">加入海上團隊</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">聯絡海上之翼</a></p>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+                <div>
+                    <p class="fw-bold mb-sm-5 mb-3">商品</p>
+                    <div class="d-flex flex-column g-2">
+                        <p class="py-1 py-sm-2"><a href="#">衝浪板</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">配件</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">周邊</a></p>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+                <div>
+                    <p class="fw-bold mb-sm-5 mb-3">衝浪資訊</p>
+                    <div class="d-flex flex-column g-2">
+                        <p class="py-1 py-sm-2"><a href="waveCondition.html">全台浪點</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">沖澡地圖</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">衝浪板功能介紹</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">衝浪板配件介紹</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">衝浪禮儀</a></p>
+                        <p class="py-1 py-sm-2"><a href="#">如何找到合適的浪</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright d-flex flex-column flex-sm-row">
+            <p>Copyright © 2024 Wings of the Sea. All rights reserved.</p>
+            <p class="fs-8">法律聲明．隱私權政策．Cookie 使用條款．</p>
+            <p class="fs-8">Cookie 可訪問性政策</p>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
