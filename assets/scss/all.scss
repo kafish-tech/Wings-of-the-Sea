@@ -9,9 +9,10 @@
 
 
 @import "./base/base";
+@import "./helper/media.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
 @import "./pages/index.scss";
-@import "./helper/media.scss";
+@import "./pages/waveCondition";

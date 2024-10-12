@@ -1,4 +1,44 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footerBg{
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+  p{
+      color: #fff;
+  }
+  i{
+      color: #fff;
+  }
+  padding-top: 220px;
+  @include mobile{
+    padding-top: 90px;
+  }
+  // 背景圖
+  background-image: url(/assets/images/footer_bg_lg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+    @include mobile{
+      background-image: url(/assets/images/footer_bg_sm.png);
+    }
+  .footerHeader{
+    margin-bottom: 48px;
+    @include mobile{
+      margin-bottom: 16px;
+    }
+  }
+  .footerContent{
+    margin-bottom: 72px;
+    @include mobile{
+      margin-bottom: 60px;
+    }
+    hr{
+      border: 1px #fff solid;
+    }
+  }
+  .copyright{
+    @include mobile{
+      margin-bottom: 24px;
+    }
+  }
+
 }
