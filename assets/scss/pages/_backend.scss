@@ -3,6 +3,19 @@
     height: 100vh;
   }
   .main {
+    padding: 0px 40px;
+
+    .appNav {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0px 12px;
+    }
+
     .userImage {
       width: 40px;
       height: 40px;
@@ -25,15 +38,21 @@
       padding-bottom: 5px;
     }
 
+    .table-responsive-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .tableOverFlow {
+      max-height: 724px;
+      overflow-y: auto;
+    }
+
     .table-container {
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid #6a6a6a;
-    }
-
-    .tableOverFlow {
-      height: 724px;
-      overflow-y: auto;
     }
 
     .table-container thead th {
@@ -62,6 +81,8 @@
 
       tbody th,
       tbody td {
+        min-width: 100px;
+        max-width: 205px;
         text-align: center;
         padding-top: 54px;
         padding-bottom: 54px;
@@ -69,9 +90,55 @@
         color: white;
       }
 
+      @media (max-width: 1666px) {
+        tbody th,
+        tbody td {
+          min-width: 120px;
+        }
+      }
+
+      @media (max-width: 1400px) {
+        tbody th,
+        tbody td {
+          min-width: 130px;
+        }
+      }
+
       .productDescribe {
         width: 221px;
       }
+    }
+  }
+
+  .web {
+    display: block !important;
+  }
+
+  .app {
+    display: none !important;
+  }
+
+  @media (max-width: 991.98px) {
+    .main {
+      .table-responsive-wrapper {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+
+      .table-responsive {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .web {
+      display: none !important;
+    }
+
+    .app {
+      display: block !important;
     }
   }
 }

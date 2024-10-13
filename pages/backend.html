@@ -10,50 +10,78 @@
 </head>
 
 <body class="backend d-flex">
-    <section class="aside flex-shrink-0">
+    <section class="aside col-2 web">
         <div
-            class="d-flex flex-column justify-content-between flex-shrink-0  text-white bg-primary-400 h-100 pt-9 px-7 pb-7">
+            class="d-flex flex-column justify-content-between flex-shrink-0 text-white bg-primary-400 h-100 pt-9 px-7 pb-7">
             <div>
-                <a href="/" class="d-flex align-items-center mb-12  text-white text-decoration-none">
+                <a href="/" class="d-flex align-items-center mb-12 text-white text-decoration-none">
                     <img class="img-fluid" src="../assets/images/Vector.png">
                 </a>
 
-                <ul class="nav nav-pills flex-column ">
+                <ul class="nav nav-pills flex-column">
                     <li>
-                        <a href="#" class="nav-link text-white fs-6 mb-9">
-                            顧客管理
-                        </a>
+                        <a href="#" class="nav-link text-white fs-6 mb-9">顧客管理</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white fs-6 mb-9">
-                            商品管理
-                        </a>
+                        <a href="#" class="nav-link text-white fs-6 mb-9">商品管理</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white fs-6 mb-9">
-                            商品上架
-                        </a>
+                        <a href="#" class="nav-link text-white fs-6 mb-9">商品上架</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white fs-6 mb-9">
-                            心得牆
-                        </a>
+                        <a href="#" class="nav-link text-white fs-6 mb-9">心得牆</a>
                     </li>
                 </ul>
             </div>
             <button class="btn btn-primary-400 border py-3">登出</button>
-
         </div>
     </section>
 
-    <section class="main flex-grow-1  py-7 px-11 ">
-        <nav class="d-flex justify-content-between align-items-center pb-7">
-            <i class="bi bi-search text-white fs-5"></i>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="userImage rounded-circle bg-white fs-5 me-3">A</div>
-                <div class="text-white fs-6">Alice</div>
+    <section class="main col-12 col-lg-10 mt-10">
+
+        <div class="app ">
+            <div class=" d-flex flex-row align-items-center justify-content-between mb-8">
+                <div class="d-flex  align-items-center">
+                    <i class="bi bi-list text-white fs-3 me-4" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
+                    <img src="../assets/images/backendIcon.png" class="img-fluid">
+                </div>
+                <i class="bi bi-search text-white fs-5"></i>
             </div>
-        </nav>
+
+            <div class="collapse appNav" id="collapseExample">
+                <div class="d-flex flex-column justify-content-between text-white bg-primary-500 px-3">
+                    <div>
+
+                        <ul class="nav nav-pills flex-column">
+                            <li>
+                                <a href="#" class="nav-link text-white fs-6 mb-9">顧客管理</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white fs-6 mb-9">商品管理</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white fs-6 mb-9">商品上架</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white fs-6 mb-9">心得牆</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary-400 border  mb-3">會員登入</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="web">
+            <div class="d-flex justify-content-between align-items-center pb-7 ">
+                <i class="bi bi-search text-white fs-5 web"></i>
+                <div class="d-flex justify-content-center align-items-center ">
+                    <div class="userImage rounded-circle bg-white fs-5 me-3 ">A</div>
+                    <div class="text-white fs-6">Alice</div>
+                </div>
+            </div>
+        </div>
 
         <div class="banner mb-4">
             <h5 class="fs-5 mt-4 mb-7">商品管理</h5>
@@ -66,20 +94,19 @@
                     <option value="階級">階級</option>
                     <option value="價格">價格</option>
                 </select>
-                <button class="btn btn-primary-500 text-white border fs-6 deleteButton"><i
-                        class="bi bi-trash text-white me-1"></i>刪除</button>
+                <button class="btn btn-primary-500 text-white border fs-6 deleteButton">
+                    <i class="bi bi-trash text-white me-1"></i>刪除
+                </button>
             </div>
         </div>
 
-        <div class="table-responsive tableOverFlow ">
-            <table class="table  productManager rounded-table table-container">
-                <thead>
+        <div class="table-responsive tableOverFlow pt-4">
+            <table class="table productManager rounded-table table-container  table-striped">
+                <thead class="">
                     <tr>
-                        <th scope="col" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                #
-                            </label>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label mt-1" for="flexCheckDefault">#</label>
                         </th>
                         <th scope="col">商品編號</th>
                         <th scope="col">商品名稱</th>
@@ -94,101 +121,91 @@
                         <th scope="col">功能鍵</th>
                     </tr>
                 </thead>
-                <tbody class="">
-                    <tr class="">
-                        <th scope="row" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                1
-                            </label>
+                <tbody>
+                    <tr>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2 " type="checkbox" value="" id="flexCheckDefault">
+                            <label class="mt-1" for="flexCheckDefault">1</label>
                         </th>
-                        <td class="col-1">td#AHAGA68</td>
-                        <td class="col-1">奧本海默板</td>
-                        <td class="col-1">長板</td>
-                        <td class="col-1">高</td>
-                        <td class="col-1">12000</td>
-                        <td class="col-1">20</td>
-                        <td class="col-1">下架</td>
-                        <td class="col-1">是</td>
-                        <td class="col-1 py-6 "><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
-                        <td class="col-2 py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
-                        <td class="col-1"><i class="bi bi-pencil-fill text-white"></i></td>
+                        <td>td#AHAGA68</td>
+                        <td>奧本海默板</td>
+                        <td>長板</td>
+                        <td>高</td>
+                        <td>12000</td>
+                        <td>20</td>
+                        <td>下架</td>
+                        <td>是</td>
+                        <td class=" py-6"><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
+                        <td class=" py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
+                        <td class=""><i class="bi bi-pencil-fill text-white"></i></td>
                     </tr>
-                    <tr class="">
-                        <th scope="row" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                2
-                            </label>
+                    <tr>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="mt-1" for="flexCheckDefault">2</label>
                         </th>
-                        <td class="col-1">td#AHAGA68</td>
-                        <td class="col-1">奧本海默板</td>
-                        <td class="col-1">長板</td>
-                        <td class="col-1">高</td>
-                        <td class="col-1">12000</td>
-                        <td class="col-1">20</td>
-                        <td class="col-1">下架</td>
-                        <td class="col-1">是</td>
-                        <td class="col-1 py-6 "><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
-                        <td class="col-2 py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
-                        <td class="col-1"><i class="bi bi-pencil-fill text-white"></i></td>
+                        <td>td#AHAGA68</td>
+                        <td>奧本海默板</td>
+                        <td>長板</td>
+                        <td>高</td>
+                        <td>12000</td>
+                        <td>20</td>
+                        <td>下架</td>
+                        <td>是</td>
+                        <td class=" py-6"><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
+                        <td class=" py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
+                        <td class=""><i class="bi bi-pencil-fill text-white"></i></td>
                     </tr>
-                    <tr class="">
-                        <th scope="row" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                3
-                            </label>
+                    <tr>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="mt-1" for="flexCheckDefault">3</label>
                         </th>
-                        <td class="col-1">td#AHAGA68</td>
-                        <td class="col-1">奧本海默板</td>
-                        <td class="col-1">長板</td>
-                        <td class="col-1">高</td>
-                        <td class="col-1">12000</td>
-                        <td class="col-1">20</td>
-                        <td class="col-1">下架</td>
-                        <td class="col-1">是</td>
-                        <td class="col-1 py-6 "><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
-                        <td class="col-2 py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
-                        <td class="col-1"><i class="bi bi-pencil-fill text-white"></i></td>
+                        <td>td#AHAGA68</td>
+                        <td>奧本海默板</td>
+                        <td>長板</td>
+                        <td>高</td>
+                        <td>12000</td>
+                        <td>20</td>
+                        <td>下架</td>
+                        <td>是</td>
+                        <td class=" py-6"><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
+                        <td class=" py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
+                        <td class=""><i class="bi bi-pencil-fill text-white"></i></td>
                     </tr>
-                    <tr class="">
-                        <th scope="row" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                4
-                            </label>
+                    <tr>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="mt-1" for="flexCheckDefault">4</label>
                         </th>
-                        <td class="col-1">td#AHAGA68</td>
-                        <td class="col-1">奧本海默板</td>
-                        <td class="col-1">長板</td>
-                        <td class="col-1">高</td>
-                        <td class="col-1">12000</td>
-                        <td class="col-1">20</td>
-                        <td class="col-1">下架</td>
-                        <td class="col-1">是</td>
-                        <td class="col-1 py-6 "><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
-                        <td class="col-2 py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
-                        <td class="col-1"><i class="bi bi-pencil-fill text-white"></i></td>
+                        <td>td#AHAGA68</td>
+                        <td>奧本海默板</td>
+                        <td>長板</td>
+                        <td>高</td>
+                        <td>12000</td>
+                        <td>20</td>
+                        <td>下架</td>
+                        <td>是</td>
+                        <td class=" py-6"><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
+                        <td class=" py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
+                        <td class=""><i class="bi bi-pencil-fill text-white"></i></td>
                     </tr>
-                    <tr class="">
-                        <th scope="row" class="d-flex align-items-center justify-content-center "><input
-                                class="form-check-input me-4 mt-0" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label " for="flexCheckDefault">
-                                5
-                            </label>
+                    <tr>
+                        <th scope="col" class="">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="mt-1" for="flexCheckDefault">5</label>
                         </th>
-                        <td class="col-1">td#AHAGA68</td>
-                        <td class="col-1">奧本海默板</td>
-                        <td class="col-1">長板</td>
-                        <td class="col-1">高</td>
-                        <td class="col-1">12000</td>
-                        <td class="col-1">20</td>
-                        <td class="col-1">下架</td>
-                        <td class="col-1">是</td>
-                        <td class="col-1 py-6 "><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
-                        <td class="col-2 py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
-                        <td class="col-1"><i class="bi bi-pencil-fill text-white"></i></td>
+                        <td>td#AHAGA68</td>
+                        <td>奧本海默板</td>
+                        <td>長板</td>
+                        <td>高</td>
+                        <td>12000</td>
+                        <td>20</td>
+                        <td>下架</td>
+                        <td>是</td>
+                        <td class=" py-6"><img src="https://fakeimg.pl/88/" class="img-fluid rounded"></td>
+                        <td class=" py-8">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</td>
+                        <td class=""><i class="bi bi-pencil-fill text-white"></i></td>
                     </tr>
                 </tbody>
             </table>
