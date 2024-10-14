@@ -10,18 +10,181 @@
 </head>
 
 <body>
-  <%- include('./layout/header');-%>
-    <h1>哈哈哈</h1>
-    <button type="button" class="btn btn-primary-300 me-18">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-sm btn-info">Info</button>
-    <button type="button" class="btn btn-lg btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+  <%- include('./layout/index-header');-%>
+    <!-- entrance -->
+    <section class="shopping-entrance">
+      <div class=" beginner-entrance pt-14 pt-md-16">
+        <div class="container-xxl d-lg-flex align-items-center justify-content-center px-md-11 px-lg-14">
+          <h6 class="fs-lg-2 text-white">你還無法起乘嗎？ </h6>
+          <div class="d-flex align-items-center">
+            <h6 class="fs-lg-1s text-white">要不要來一張</h6>
+            <a href="#" class="btn  text-primary-200 rounded-0 fs-lg-1">快樂板<span
+                class="fs-3 material-symbols-outlined fs-5 align-text-bottom">
+                arrow_right
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class=" d-lg-flex">
+        <div class="intermediate-entrance position-relative">
+          <div class="container-fluid intermediate-title d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">中階版</a>
+              <a class="p-0 btn  btn-lg d-none d-lg-block" href="#">中階版</a>
+            </div>
+          </div>
+        </div>
+        <div class="height-end-entrance position-relative">
+          <div class="container-fluid height-end-title d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4 ">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">高階版</a>
+              <a class="p-0 btn btn-lg d-none d-lg-block" href="#">高階版</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- user-recommend -->
+    <section class="user-recommend py-12 py-lg-15">
+      <h2 class="recommend-decoration text-center pb-9">心得牆</h2>
+      <div class="container mt-lg-13">
+        <div class="row gx-0 gy- h-100">
+          <div class="col-lg-6 ">
+            <div class="ms-lg-11 mb-lg-11 position-relative">
+              <div class="reconmend-suer-img rounded-9 "></div>
+            </div>
+          </div>
+          <div class="col-lg-6 vh-100">
+            <div class="ms-lg-15 d-flex flex-column h-100">
+              <div class="p-lg-5">
+                <h6 class="fs-7 mb-7 d-lg-none ">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h6>
+                <h4 class="fs-4 mb-8 mt-5 d-none d-lg-block">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h4>
+                <p class="fs-6">
+                  看到奧運中衝浪選手的英姿，讓我對這項運動產生了濃厚的興趣。偶然發現這個網站，讓我驚喜地找到適合自己的衝浪板和配件，購買過程變得輕鬆無比。網站上提供了許多新手學習指南與注意事項，讓我在進入這項運動前就掌握了必要的知識，避免了許多初學者容易犯的錯誤。
+                  特別值得一提的是，網站推薦的衝浪板和配件不僅品質優良，還是多個知名活動與廠商的首選，讓我對自己的選擇充滿信心。感謝這個網站的全方位支持，讓我的學習衝浪之旅變得如此順利愉快。</p>
+                <div class="d-flex justify-content-end w-100">
+                  <h5 class="text-primary-200 line-before-text  mt-4 mt-lg-8 "> 匿名貓貓</h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-auto d-none d-lg-block">
+                <a class="btn " type="button" href="#">更多留言<span
+                    class="material-symbols-outlined fs-5 align-text-bottom">
+                    arrow_right
+                  </span></a>
+              </div>
+              <div class="d-flex justify-content-end mt-auto d-lg-none">
+                <a class="btn-sm " type="button" href="#">更多留言<span
+                    class="material-symbols-outlined fs-5 align-text-bottom">
+                    arrow_right
+                  </span></a>
+              </div>
+            </div>
 
-    <button type="button" class="btn btn-link">Link</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product-carousel -->
+    <section class="product-carousel py-lg-15 px-lg-12">
+      <div class="container-fluid">
+        <div class="swiper mySwiper ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <img class="rounded-5 object-fit-cover" src="/assets/images/carousel-img/product-02.jpeg" />
+            </div>
+            <div class="swiper-slide ">
+              <img class="rounded-5 object-fit-cover" src="/assets/images/carousel-img/product-02.jpeg" />
+            </div>
+            <div class="swiper-slide ">
+              <img class="rounded-5 object-fit-cover" src="/assets/images/carousel-img/product-02.jpeg" />
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-pagination">
+          <div class="swiper-prev py-1 px-7 d-inline-block border rounded-pill border-dark"><i
+              class="bi bi-arrow-left fs-4"></i></div>
+          <div class="swiper-next py-1 px-7 d-inline-block border rounded-pill border-dark"></div>
+        </div>
+
+      </div>
+    </section>
+    <section class=" third-party pt-12 pt-lg-15 pb-15 pb-lg-18">
+      <div class="container">
+        <h5 class="text-center fs-lg-2 mb-11 mb-lg-17">第三方認證</h5>
+        <div class="row gy-10">
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-01.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-01.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-02.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-02.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-03.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-03.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-04.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-04.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-05.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-05.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-06.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-06.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-07.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-07.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/assets/images/third-party-sm/third-party-sm-08.png">
+                <img src="/assets/images/third-party-lg/third-party-lg-08.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
     <%- include('./layout/footer');-%>
       <script type="module" src="../main.js"></script>
 </body>
