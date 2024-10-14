@@ -6,6 +6,7 @@
 @import "../../assets/scss/utils/utilities";
 
 @import "./base/base";
+@import "./helper/media.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
@@ -14,3 +15,4 @@
 @import "./helper/media.scss";
 @import "./pages/backend.scss";
 @import "./pages/project.scss";
+@import "./pages/waveCondition";

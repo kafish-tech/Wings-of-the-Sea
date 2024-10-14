@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/oceanWingsIcon.png" />
+    <title>Wave Condition - Ocean Wings</title>
+</head>
+<body>
+    <!-- <%- include('./layout/header');-%> -->
+    <section class="waveCondition container d-flex flex-column">
+
+        <!-- 頁面選單 -->
+        <nav class="mb-sm-15 mb-5 py-sm-2 py-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">浪況分析</li>
+            </ol>
+        </nav>
+
+        <!-- 搜尋框 -->
+        <div class="searchPlace input-group mb-13 mb-sm-16 d-flex mx-auto g-3">
+            <!-- 搜尋 ICON -->
+            <span class="input-group-text text-white iconPlace56 bg-primary-500 border-0"><i class="bi bi-search icon32"></i></span>
+            <!-- 搜尋輸入框 -->
+            <input id="searchInput" class="form-control outline-none" type="search" placeholder="輸入浪點" aria-label="search" aria-describedby="#searchAdd">
+            <!-- 清除 ICON -->
+            <span class="input-group-text text-white iconPlace40 bg-primary-500 border-0"><i class="bi bi-x-circle-fill icon20"></i></span>
+            <!-- 地點清單 -->
+            <button class="btn btn-primary text-white iconPlace56 border-0" type="button" id="searchAdd"><i class="bi bi-chevron-down icon32"></i></button>
+        </div>
+
+        <!-- 地點標題 -->
+        <h1 class="location">
+            <span class="locationBg">松柏港</span>
+        </h1>
+
+        <!--  日期選單  -->
+        <div class="dateArea">
+            <div class="previousBtn d-none d-sm-block mr-11">
+                <a class="page-link p-4" href="#" aria-label="Previous"><i class="bi bi-chevron-left "></i></a>
+            </div>
+            <nav class="dateBtn" aria-label="Page navigation">
+                <ul class="pagination justify-content-between align-items-center">
+                    <li class="page-item"><a class="page-link active py-2 px-5 text-center" href="#" role="button">08/26<br>(一)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/27<br>(二)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/28<br>(三)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/29<br>(四)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/30<br>(五)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">08/31<br>(六)</a></li>
+                    <li class="page-item"><a class="page-link py-2 px-5 text-center" href="#" role="button">09/01<br>(日)</a></li>
+                </ul>
+            </nav>
+            <div class="nextBtn d-none d-sm-block ml-11">
+                <a class="page-link p-4" href="#" aria-label="Next">
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <!--  浪況資訊  -->
+        <div class="information d-flex flex-column flex-md-row-reverse">
+            <div class="comment align-self-sm-stretch position-relative py-4 px-5 d-flex flex-column justify-content-between">
+                <p class="fw-bold">今日評語</p>
+                <div class="align-self-end">
+                    <p class="fw-bold text-end">大浪怒濤</p>
+                    <p>浪高與高手雲集，新手不宜</p>
+                </div>
+                <img class="position-absolute " src="../assets/images/waveIcon.png" alt="大浪怒濤">
+            </div>
+            <div class="coefficient d-flex flex-column">
+                <div class="borderTop d-flex align-items-center justify-content-between">
+                    <p>下浪時間</p>
+                    <p class="fw-bold">13:00-15:00</p>
+                </div>
+                <div class="row g-0">
+                    <div class="borderLeft col-12 col-md-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>浪高(米)</p>
+                            <p class="fw-bold">0.8</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>風向</p>
+                            <i class="bi bi-cursor-fill" style="transform: rotate(45deg);"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>風速(節)</p>
+                            <p  class="fw-bold">13</p>
+                        </div>
+                    </div>
+                    <div class="borderRight col-12 col-md-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>週期</p>
+                            <p  class="fw-bold">7.2</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>海浪方向</p>
+                            <i class="bi bi-cursor-fill"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>氣溫(°C)</p>
+                            <p  class="fw-bold">27</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('./layout/footer');-%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
