@@ -19074,11 +19074,6 @@ video {
   position: relative;
   font-size: 40px;
 }
-@media (max-width: 376px) {
-  .user-recommend .recommend-decoration {
-    font-size: 20px;
-  }
-}
 .user-recommend .recommend-decoration::after {
   content: "";
   position: absolute;
@@ -19096,4 +19091,22 @@ video {
     height: 34px;
     background: url("/assets/images/Wave-decoration-sm.svg");
   }
+}
+@media (max-width: 376px) {
+  .user-recommend .recommend-decoration {
+    font-size: 20px;
+  }
+}
+
+.product-carousel {
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/images/carousel-img/crarousel-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product-carousel .swiper-slide {
+  height: 802px;
+  max-width: 532px;
 }/*# sourceMappingURL=all.css.map */

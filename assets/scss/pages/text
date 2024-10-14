@@ -1,0 +1,33 @@
+ <section class="user-recommend py-12 py-lg-15">
+    f
+      <div class="container pt-11 pt-lg-15">
+        <div class="row gx-lg-16">
+          <div class="col-lg-6 mb-11 mb-lg-0">
+            <div class="bg-secondary-400 positon-relative">
+              <div class="reconmend-suer-img">
+                <img class=" rounded-5" src="/assets/images/user-recommend/user-recommend.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card bg-primary-400 h-100">
+              <div class="card-body">
+                <h6 class="fs-7 mb-7 d-lg-none ">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h6>
+                <h4 class="fs-4 mb-8 d-none d-lg-block">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h4>
+                <p class="fs-6">
+                  看到奧運中衝浪選手的英姿，讓我對這項運動產生了濃厚的興趣。偶然發現這個網站，讓我驚喜地找到適合自己的衝浪板和配件，購買過程變得輕鬆無比。網站上提供了許多新手學習指南與注意事項，讓我在進入這項運動前就掌握了必要的知識，避免了許多初學者容易犯的錯誤。
+                  特別值得一提的是，網站推薦的衝浪板和配件不僅品質優良，還是多個知名活動與廠商的首選，讓我對自己的選擇充滿信心。感謝這個網站的全方位支持，讓我的學習衝浪之旅變得如此順利愉快。</p>
+                <h5 class="text-primary-200 line-before-text text-end mt-4 mt-lg-8 fs-lg-2"> 匿名貓貓</h5>
+                <div class="position-relative end-0 recommend-bg">
+                  <div class="position-absolute mt">
+                    <a class="btn " type="button" href="#">更多留言<span class="fs-3 material-symbols-outlined fs-5">
+                        arrow_right
+                      </span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
