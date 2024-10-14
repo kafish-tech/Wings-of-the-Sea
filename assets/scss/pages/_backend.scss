@@ -1,9 +1,4 @@
 .backend {
-  // Aside styles
-  .aside {
-    height: 100vh;
-  }
-
   // Main content styles
   .main {
     padding: 0 40px;
@@ -130,6 +125,7 @@
 
       @media (max-width: 992px) {
         justify-content: start;
+        padding-left: 15px;
       }
     }
   }
