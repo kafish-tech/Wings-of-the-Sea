@@ -1,21 +1,26 @@
 .backend {
+  // Aside styles
   .aside {
     height: 100vh;
   }
-  .main {
-    padding: 0px 40px;
 
+  // Main content styles
+  .main {
+    padding: 0 40px;
+
+    @media (max-width: 768px) {
+      padding: 0 12px;
+    }
+
+    // App navigation
     .appNav {
       position: absolute;
-      left: 0px;
+      left: 0;
       width: 100%;
       z-index: 1000;
     }
 
-    @media (max-width: 768px) {
-      padding: 0px 12px;
-    }
-
+    // User image
     .userImage {
       width: 40px;
       height: 40px;
@@ -24,8 +29,23 @@
       align-items: center;
     }
 
+    // Table styles
+    .tableBorder {
+      border-left: 1px solid rgba(106, 106, 106, 1);
+      border-right: 1px solid rgba(106, 106, 106, 1);
+    }
+
+    .table > :not(caption) > * > * {
+      border-bottom: 1px solid rgba(106, 106, 106, 1);
+    }
+
+    // Form elements
     select {
       width: 130px;
+    }
+
+    .deleteButton {
+      font-size: 16px;
     }
 
     .form-select.bg-primary-400 {
@@ -33,40 +53,26 @@
       font-size: 16px;
     }
 
-    .deleteButton {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    .table-responsive-wrapper {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .tableOverFlow {
-      max-height: 724px;
-      overflow-y: auto;
-    }
-
+    // Table container
     .table-container {
       border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid #6a6a6a;
+      max-height: 724px;
+      overflow-y: auto;
+      position: relative;
+
+      thead th {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 1;
+      }
     }
 
-    .table-container thead th {
-      position: sticky;
-      top: 0;
-      background-color: #fff;
-      z-index: 1;
-    }
-
+    // Product manager table
     .productManager {
       thead th {
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 0;
         background-color: #161b26;
         color: white;
         border-bottom: none;
@@ -79,28 +85,23 @@
         border: #6a6a6a;
       }
 
-      tbody th,
-      tbody td {
-        min-width: 100px;
-        max-width: 205px;
-        text-align: center;
-        padding-top: 54px;
-        padding-bottom: 54px;
-        background-color: #1d222c;
-        color: white;
-      }
+      tbody {
+        th,
+        td {
+          min-width: 100px;
+          max-width: 205px;
+          text-align: center;
+          padding: 54px 0;
+          background-color: #1d222c;
+          color: white;
 
-      @media (max-width: 1666px) {
-        tbody th,
-        tbody td {
-          min-width: 120px;
-        }
-      }
+          @media (max-width: 1666px) {
+            min-width: 120px;
+          }
 
-      @media (max-width: 1400px) {
-        tbody th,
-        tbody td {
-          min-width: 130px;
+          @media (max-width: 1400px) {
+            min-width: 130px;
+          }
         }
       }
 
@@ -108,8 +109,32 @@
         width: 221px;
       }
     }
+
+    // Pagination
+    .pagination {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .pagesButton {
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        background-color: #1d222c;
+
+        &:focus {
+          border-bottom: 1px solid #fad344;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      @media (max-width: 992px) {
+        justify-content: start;
+      }
+    }
   }
 
+  // Responsive styles
   .web {
     display: block !important;
   }
@@ -121,13 +146,11 @@
   @media (max-width: 991.98px) {
     .main {
       .table-responsive-wrapper {
-        margin-left: -15px;
-        margin-right: -15px;
+        margin: 0 -15px;
       }
 
       .table-responsive {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 15px;
       }
     }
   }
