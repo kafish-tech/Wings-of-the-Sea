@@ -13,13 +13,13 @@
 
 }
 
-video {
-  max-height: 1080px;
+.index-video {
+  // height: 1080px;
 
-  .ratio-4x3 {
-    @include media-breakpoint-up(lg) {
-      --bs-aspect-ratio: 56.25%; // 16:9 ratio for 4x3
-    }
+  @include mobile {
+    height: 412px;
+
   }
+
 
 }
