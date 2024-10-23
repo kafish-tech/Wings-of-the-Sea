@@ -94,7 +94,6 @@
         padding: 12px;
         justify-content: center;
         align-items: center;
-        gap: 12px;
         @include mobile{
             margin-bottom: 60px;
         }
@@ -106,7 +105,7 @@
         .form-control{
             border: 0;
             background-color: $primary-500;
-            padding: 13px 12px;
+            padding: 13px 0px;
             margin-left: -8px;
             &:focus{
                 background-color: $primary-500;
@@ -117,8 +116,11 @@
         }
         .iconPlace56{
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
+            border-radius: 12px !important; ;
         }
+    }
+    .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-left: 0 !important; 
     }
 
 
@@ -159,8 +161,8 @@
             width:6px; height:6px;/*左圓點的大小*/
             background-color: $primary-300;
             border-radius: 50%;
-            top:50%; left:0;/*左圓點的位置*/
-            transform: translate(-50%, -50%);
+            top:50%; left:-3px;/*左圓點的位置*/
+            transform: translateY(-50%);
         }
         .locationBg::after{
             content: '';
@@ -168,8 +170,8 @@
             width:6px; height:6px;/*右圓點的大小*/
             background-color: $primary-300;
             border-radius: 50%;
-            top:50%; right:-10px;/*右圓點的位置*/
-            transform: translate(-50%, -50%);
+            top:50%; right:-3px;/*右圓點的位置*/
+            transform: translateY(-50%);
         }
     }
     //背景的線條
@@ -281,6 +283,10 @@
                 width: 100%;
                 height: auto;
                 margin-right: 0;
+            }
+            .row{
+                margin-right: 0px;
+                margin-left: 0px;
             }
         }
         .borderTop{
