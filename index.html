@@ -7,43 +7,346 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/Wings-of-the-Sea/assets/oceanWingsIcon-29b1deeb.png" />
   <title>Ocean Wings</title>
-  <script type="module" crossorigin src="/Wings-of-the-Sea/assets/main-1a3ba0ea.js"></script>
-  <link rel="stylesheet" href="/Wings-of-the-Sea/assets/main-c4184d72.css">
+  <script type="module" crossorigin src="/Wings-of-the-Sea/assets/main-a7d94675.js"></script>
+  <link rel="stylesheet" href="/Wings-of-the-Sea/assets/main-83be491d.css">
 </head>
 
 <body>
-  <h1 class="footer">我是 header</h1>
-<h2 class="hello">我是h2</h2>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-<a href="waveCondition.html">waveCondition</a>    <h1>哈哈哈</h1>
-    <button type="button" class="btn btn-primary-300 me-18">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-sm btn-info">Info</button>
-    <button type="button" class="btn btn-lg btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+  <div class="index-video-area">
+    <div>
+        <div class="position-relative overflow-hidden">
+            <!-- <div class="mw-100 mh-100 ratio ratio-16x9">
+                <iframe src="https://https://www.youtube.com/watch?v=aYBGV8ssve4&t=535s" title="YouTube video"
+                    allowfullscreen></iframe>
+            </div> -->
+            <video class=" index-video "
+                poster="https://videos.pexels.com/video-files/2802271/2802271-hd_1920_1080_30fps.mp4"
+                playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src=" https://videos.pexels.com/video-files/2802271/2802271-hd_1920_1080_30fps.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="index-navbar container-fluid px-md-11 px-lg-14 position-absolute top-0 start-0 w-100">
+                <div class=" d-flex justify-content-between align-items-center py-4 py-lg-12">
+                    <a href="#">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/Ocean-Wings-logo-sm-91c12a9a.svg ">
+                            <img src="/Wings-of-the-Sea/assets/Ocean-Wings-logo-lg-0d5eb1c5.svg" width="100%" alt="article-banner">
+                        </picture>
+                    </a>
+                    <a class="border-0  d-md-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><span
+                            class="text-white material-symbols-outlined">
+                            menu
+                        </span></a>
+                </div>
+            </div>
+            <div
+                class="index-header d-none d-xxl-block  pe-14 py-12 text-nowrap h-100 position-absolute top-0 end-0 bg-primary-400">
+                <div class="d-flex align-items-end flex-column mb-3 h-100">
+                    <div class="p-2">
+                        <a class="btn" type="button" href="#">會員登入</a>
+                        <a class="btn" type="button" href="#">
+                            <span class="fs-3 material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mt-auto"><a class="btn" type="button" href="#">長板 <span
+                                class="align-text-bottom material-symbols-outlined fs-5 ">
+                                arrow_right
+                            </span></a></div>
+                    <div><a class="btn" type="button" href="#">短板 <span
+                                class="align-text-bottom material-symbols-outlined fs-5">
+                                arrow_right
+                            </span></a></div>
+                    <div><a class="btn" type="button" href="#">配件 <span
+                                class="align-text-bottom material-symbols-outlined fs-5">
+                                arrow_right
+                            </span></a></div>
+                </div>
+            </div>
+        </div>
 
-    <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="offcanvas offcanvas-top vh-100 bg-primary-400" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <a href="#">
+                <img src="/Wings-of-the-Sea/assets/Ocean-Wings-logo-sm-91c12a9a.svg" alt="logo">
+            </a>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body h-100 d-flex justify-content-center align-items-center">
+            <div class="w-100">
+                <div>
+                    <a class="btn d-block mb-3">長板</a>
+                    <a class="btn d-block mb-3">短板</a>
+                    <a href="#" class="btn d-block">配件</a>
+                </div>
+                <hr class="navbar-hr">
+                <div>
+                    <a class="btn d-block" href="#">購物車</a>
+                    <a class="btn d-block">會員登入</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>    <!-- entrance -->
+    <section class="shopping-entrance">
+      <div class=" beginner-entrance pt-14 pt-md-16">
+        <div class="container-xxl d-lg-flex align-items-center justify-content-center px-md-11 px-lg-14">
+          <h1 class="d-none d-lg-block  text-white">你還無法起乘嗎？ </h1>
+          <h6 class="d-lg-none text-white">你還無法起乘嗎？ </h6>
+          <div class="d-flex align-items-center">
+            <h1 class="d-none d-lg-block text-white">要不要來一張</h1>
+            <a href="#" class="btn btn-lg d-none d-lg-block text-primary-200 rounded-0 fs-1">快樂板<span
+                class="fs-1 material-symbols-outlined  align-text-middle">
+                arrow_right
+              </span></a>
+            <h6 class="d-lg-none text-white">要不要來一張</h6>
+            <a href="#" class="btn text-primary-200 rounded-0 d-lg-none">快樂板<span
+                class="fs-3 material-symbols-outlined  align-text-bottom">
+                arrow_right
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class=" d-lg-flex">
+        <div class="intermediate-entrance position-relative">
+          <div class="container-fluid title-gradient d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">中階版</a>
+              <a class="p-0 btn  btn-lg d-none d-lg-block" href="#">中階版</a>
+            </div>
+          </div>
+        </div>
+        <div class="height-end-entrance position-relative">
+          <div class="container-fluid title-gradient d-flex align-items-end  position-absolute bottom-0 w-100">
+            <div class="py-4 ">
+              <a class="p-0 btn btn-sm d-lg-none" href="#">高階版</a>
+              <a class="p-0 btn btn-lg d-none d-lg-block" href="#">高階版</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- user-recommend -->
+    <section class="user-recommend py-12 py-lg-15">
+      <h2 class="recommend-decoration text-center pb-9">心得牆</h2>
+      <div class="container mt-lg-13">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <div class="ms-lg-11 mb-lg-11 position-relative">
+              <div class="reconmend-suer-img rounded-9 "></div>
+            </div>
+          </div>
+          <div class="col-lg-6 mh-100">
+            <div class="ms-lg-15 d-flex flex-column h-100">
+              <div class="p-lg-5">
+                <h6 class="mb-7 d-lg-none mt-11">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h6>
+                <h4 class="mb-8 mt-5 d-none d-lg-block">“<span class="text-primary-200">我找到心儀的衝浪板</span>”</h4>
+                <p class="fs-6">
+                  看到奧運中衝浪選手的英姿，讓我對這項運動產生了濃厚的興趣。偶然發現這個網站，讓我驚喜地找到適合自己的衝浪板和配件，購買過程變得輕鬆無比。網站上提供了許多新手學習指南與注意事項，讓我在進入這項運動前就掌握了必要的知識，避免了許多初學者容易犯的錯誤。
+                  特別值得一提的是，網站推薦的衝浪板和配件不僅品質優良，還是多個知名活動與廠商的首選，讓我對自己的選擇充滿信心。感謝這個網站的全方位支持，讓我的學習衝浪之旅變得如此順利愉快。</p>
+                <div class="d-flex justify-content-end w-100">
+                  <h5 class="text-primary-200 line-before-text  mt-4 mt-lg-8 "> 匿名貓貓</h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-auto position-relative">
+                <a class="btn btn-lg d-none d-lg-block more-recommend" type="button" href="#">更多留言<span
+                    class="material-symbols-outlined fs-5 align-text-bottom">
+                    arrow_right
+                  </span></a>
+              </div>
+              <div class="d-flex justify-content-end mt-sm-5 d-lg-none ">
+                <a class="btn-sm more-recommend position-relative mt-15" type="button" href="#">更多留言<span
+                    class="material-symbols-outlined fs-5 align-text-bottom">
+                    arrow_right
+                  </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product-carousel -->
+    <section class="product-carousel py-11 py-lg-15 px-lg-12">
+      <div class="container-fluid">
+        <div class="swiper mySwiper ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="position-relative rounded-9">
+                <img class="" src="/Wings-of-the-Sea/assets/crarousel-item-01-53e27014.jpg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0 start-0" href="#">高階版</a><a
+                    class=" btn btn-lg d-none d-lg-block " href="#">高階版</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative ">
+                <img src="/Wings-of-the-Sea/assets/crarousel-item-02-631dfd2e.jpg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0 start-0" href="#">中階版</a><a
+                    class=" btn btn-lg d-none d-lg-block " href="#">中階版</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative ">
+                <img src="/Wings-of-the-Sea/assets/crarousel-item-03-64b159f7.jpeg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0 start-0" href="#">初階板</a><a
+                    class=" btn btn-lg d-none d-lg-block " href="#">初階板</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/Wings-of-the-Sea/assets/crarousel-item-04-607ec4e3.jpeg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0 start-0" href="#">活動促銷</a><a
+                    class=" btn btn-lg d-none d-lg-block " href="#">活動促銷</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/Wings-of-the-Sea/assets/crarousel-item-05-94a1fc24.jpg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0" href="#">海洋友善活動</a>
+                  <a class=" btn btn-lg d-none d-lg-block bottom-0" href="#">海洋友善活動</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/Wings-of-the-Sea/assets/crarousel-item-06-6c4a23e9.jpg" />
+                <div class="position-absolute bottom-0 start-0 w-100 title-gradient d-flex py-lg-3
+                  justify-content-start">
+                  <a class=" btn btn-sm d-lg-none bottom-0" href="#">浪況分析</a>
+                  <a class=" btn btn-lg d-none d-lg-block " href="#">浪況分析</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-12 mt-lg-13">
+          <div class="swiper-pagination d-flex justify-content-center">
+            <div class="swiper-next p-3 p-lg-7  d-inline-block border  border-dark"><i
+                class="bi bi-chevron-left fs-6"></i></div>
+            <div class="swiper-prev p-3 p-lg-7 d-inline-block  border-dark"><i class="bi bi-chevron-right fs-6"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" third-party pt-12 pt-lg-15 pb-15 pb-lg-18">
+      <div>
+        <h5 class="third-party-decoration text-center mb-11 mb-lg-17 d-lg-none">第三方認證</h5>
+        <h2 class="third-party-decoration text-center mb-11 mb-lg-17 d-none d-lg-block">第三方認證</h2>
+      </div>
+      <div class="container">
+
+        <div class="row gy-10">
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-01-d6fadb86.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-01-3bf8a299.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-02-52e42a5c.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-02-d167d96f.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-03-c74cff6e.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-03-d9f6f186.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="data:image/png;base64,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 ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-04-5df877d7.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-05-187eba6d.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-05-ce2d89f2.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-06-3fde55e9.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-06-d1711eb3.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="/Wings-of-the-Sea/assets/third-party-sm-07-ffd384ad.png ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-07-2a42ff5c.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card rounded-0">
+              <picture>
+                <source media="(max-width: 992px)" srcset="data:image/png;base64,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 ">
+                <img src="/Wings-of-the-Sea/assets/third-party-lg-08-9da2ed99.png" width="100%" alt="third-party-img">
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
     <div class="footerBg">
     <div class="container d-flex flex-column">
-        
+
         <div class="footerHeader">
             <h2 class="fw-bold">海上之翼 Wings of the Sea</h2>
         </div>
-        
+
         <div class="footerContent row flex-sm-row-reverse flex-column">
-        
-            <div class="community col-sm-4 col-12 d-flex flex-column g-5">
-                <div class="d-sm-block d-none align-self-end"><p>追蹤我們</p></div>
-                <div class="d-flex gx-sm-7 gx-4 align-self-sm-end align-self-start">
-                    <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter-x"></i><i class="bi bi-youtube"></i>
+
+            <div class="community col-sm-4 col-12 d-flex flex-column gap-5  mb-sm-0 mb-13">
+                <div class="d-sm-block d-none align-self-end">
+                    <p>追蹤我們</p>
+                </div>
+                <div class="d-flex gap-sm-7 gap-4 align-self-sm-end align-self-start">
+                    <i class="icon24 bi bi-facebook"></i>
+                    <i class="icon24 bi bi-instagram"></i>
+                    <i class="icon24 bi bi-twitter-x"></i>
+                    <i class="icon24 bi bi-youtube"></i>
                 </div>
             </div>
-        
+
             <div class="webMap col-sm-8 col-12 d-flex justify-content-sm-between flex-column flex-sm-row">
                 <div>
                     <p class="fw-bold mb-sm-5 mb-3">關於我們</p>
@@ -78,10 +381,12 @@
             </div>
         </div>
 
-        <div class="copyright d-flex flex-column flex-sm-row">
+        <div class="copyright d-flex flex-column flex-sm-row gap-2">
             <p>Copyright © 2024 Wings of the Sea. All rights reserved.</p>
-            <p class="fs-8">法律聲明．隱私權政策．Cookie 使用條款．</p>
-            <p class="fs-8">Cookie 可訪問性政策</p>
+            <div class="d-flex flex-column flex-sm-row">
+                <p class="fs-8">法律聲明．隱私權政策．Cookie 使用條款．</p>
+                <p class="fs-8">Cookie 可訪問性政策</p>
+            </div>
         </div>
     </div>
 </div>      
