@@ -325,6 +325,9 @@ img {
 .product-pageButton_Num {
     margin-bottom: 120px;
 }
+.product-AllImg-Font-name{
+     max-height: auto;
+}
 
 .product-AllImg-icon {
     background-image: url(/assets/images/project/product-img-icon.png);
@@ -338,24 +341,27 @@ img {
     background-image: url(/assets/images/project/正面.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; 
     height: 380px;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .product-AllImg-IMG-2 {
     background-image: url(/assets/images/project/側面.png);
     background-position: center;
     background-repeat: no-repeat;
+    
     height: 380px;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .product-AllImg-IMG-3 {
     background-image: url(/assets/images/project/背面.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; 
     height: 380px;
-    width:1000px;
+    max-width: 1000px;
 }
 
 
@@ -366,12 +372,17 @@ img {
 @media (max-width: 576px) {
     .product-AllImg-IMG-1 {
         background-image: url(/assets/images/project/正面.-sm.png);
+       
+        
     }
     .product-AllImg-IMG-2 {
         background-image: url(/assets/images/project/側面-sm.png);
+       
+       
     }
     .product-AllImg-IMG-3 {
         background-image: url(/assets/images/project/背面-sm.png);
+     
     }
 }
 
